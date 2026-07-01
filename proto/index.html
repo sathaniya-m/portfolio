@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        
+        <i class="fa-solid degeneration fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Sathaniya</h1>
+            <h3>And I'm a <span class="text-animate">Computer Science Student</span></h3>
+            <p><p>Eager to apply my programming foundations and academic knowledge to real-world development projects and collaborative environments.</p></p>
+            
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/sathaniya-m-74802334a?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/sathaniya-m"><i class="fa-brands fa-github"></i></a>
+            </div>
+            
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <!-- Replace with your picture (e.g., images/photo.jpeg) -->
+            <img src="img/photo.jpeg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- Replace with another picture or illustration -->
+            <img src="img/photo.jpeg" alt="About Me Image">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Computer Science Student & Innovator</h3>
+            <p>Technology inspires me to create solutions that make a difference. As a Computer Science student, I enjoy designing responsive websites, exploring new programming languages, and developing practical applications. I believe in continuous learning, teamwork, and writing clean, efficient code to build impactful software.</p>
+            <a href="#skills" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Programming Languages</h3>
+                <p>Java, Python, C++, and JavaScript with a strong understanding of object-oriented programming, problem-solving, and writing efficient, maintainable code.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-html5"></i>
+                <h3>Web Development</h3>
+                <p>Develop responsive and interactive websites using HTML5, CSS3, and JavaScript, focusing on clean design, user-friendly interfaces, and cross-device compatibility.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>Data Analytics and Tools</h3>
+                <p>Experienced with Python, MySQL, Power BI, Tableau, Git, GitHub, and Visual Studio Code for data analysis, database management, version control, and project development.</p>
+            </div>
+        </div>
+    </section> <!-- FIXED: Closed the skills section -->
+
+    <!-- PORTFOLIO / PROJECTS SECTION -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <!-- Project Card 1 -->
+            <div class="portfolio-box">
+                <img src="img/b12.jpg" alt="Project 1">
+                <div class="portfolio-layer">
+                    <h4>Hospital Management System</h4>
+                    <p>Developed a Hospital Management System to manage patient records, doctor appointments, and hospital operations with a responsive user interface and secure database integration.</p>
+                    <a href="https://github.com/sathaniya-m/Hospital-Management-System"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="portfolio-box">
+                <img src="img/b13.png" alt="Project 2">
+                <div class="portfolio-layer">
+                    <h4>Student Performance & Result Analytics</h4>
+                    <p>Built a Python pipeline in Google Colab using Pandas and Seaborn to transform raw academic data into automated metrics and interactive statistical visualizations.</p>
+                    <a href="https://github.com/sathaniya-m/Student-Performance-Analytics"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="portfolio-box">
+                <img src="img/b14.png" alt="Project 3">
+                <div class="portfolio-layer">
+                    <h4>Scalable Cloud Compute Execution</h4>
+                    <p>Built a scalable compute environment on Google Colab to execute complex, high-performance workloads using optimized cloud infrastructure.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <!-- 1. Changed action to Web3Forms API link and added method="POST" -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
+            <!-- 2. Added your secret access key right here -->
+            <input type="hidden" name="access_key" value="99cf66e8-dfd6-45c4-a692-92a29d3533a0">
+
+            <div class="input-box">
+                <!-- 3. Added name="name" -->
+                <input type="text" name="name" placeholder="Full Name" required>
+                <!-- 4. Added name="email" -->
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <!-- 5. Added name="mobile" -->
+                <input type="number" name="mobile" placeholder="Mobile Number">
+                <!-- 6. Added name="subject" -->
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Sathaniya | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
